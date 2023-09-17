@@ -1,0 +1,74 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: auto;
+}
+footer {
+    font-family: 'Roboto', sans-serif;
+}
+header {
+    background-color: rgb(70, 22, 132);
+    margin: auto;
+    text-align: center;
+    justify-content: space-around;
+    display: flex;
+    padding: .5rem;
+
+}
+header h1{
+    padding-top: 3rem;
+    font-size: 3rem;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+}
+nav {
+    background-color: black;
+    text-align: center;
+}
+nav a {
+    color: white;
+    display: block;
+    padding: .5rem;
+    font-size: 2rem;
+}
+main {
+    margin: auto;
+    text-align: center;
+    margin: 1rem;
+}
+hr.solid-line {
+    border-top: .25rem solid #bbb;
+}
+.card {
+    outline: auto;
+    outline-color: black;
+    
+
+}
+.card li{
+    list-style-type: none;
+}
+.card h3 {
+    padding:  .5rem;
+    font-size: 2rem;
+    background-color: rgb(70, 22, 132);
+    color: white;
+    margin-top: 0;
+}
+.card li{
+    padding: .5rem;
+    font-size: 1.25rem;
+    text-align: left;
+}
+footer {
+    background-color: rgb(70, 22, 132);
+    color: white;
+}
+footer p{
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+}
+#lastModified {
+    color: rgb(9, 255, 5);
+}
