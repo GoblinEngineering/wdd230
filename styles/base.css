@@ -75,6 +75,8 @@ footer p{
 #mobile_menu_button {
     max-width: 60px;
     max-height: 60px;
+    min-width: 60px;
+    min-height: 60px;
     margin-top: auto;
     margin-bottom: auto;
     
