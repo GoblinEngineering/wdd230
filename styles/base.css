@@ -81,3 +81,14 @@ footer p{
     margin-bottom: auto;
     
 }
+#nav.hide{
+    display: none;
+}
+#mobile_menu_button.hide::before {
+	content: "≡";
+}
+#mobile_menu_button::before {
+	content: "X";
+}
+
+
