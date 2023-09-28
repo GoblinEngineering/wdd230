@@ -16,10 +16,9 @@ header {
 
 }
 header h1{
-    padding-top: 3rem;
     font-size: 3rem;
-    text-align: center;
-    vertical-align: middle;
+    margin-top: auto;
+    margin-bottom: auto;
     color: white;
 }
 nav {
@@ -72,4 +71,11 @@ footer p{
 }
 #lastModified {
     color: rgb(9, 255, 5);
+}
+#mobile_menu_button {
+    max-width: 60px;
+    max-height: 60px;
+    margin-top: auto;
+    margin-bottom: auto;
+    
 }

@@ -13,4 +13,7 @@
         display: block;
         text-align: center;
     }
+    #mobile_menu_button {
+        display: none;
+    }
 }
