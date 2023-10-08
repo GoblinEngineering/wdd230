@@ -1,0 +1,28 @@
+@media screen and (min-width: 1000px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+    }
+
+    .info{
+        grid-column: 1/3;
+    }
+    nav ul {
+        display: flex;
+
+    }
+    nav ul ol {
+        flex: 1 1 100%;
+        display: flex;
+
+    }
+    nav a {
+        display: block;
+        text-align: center;
+    }
+    .card {
+        min-width: 80%;
+        margin: 1rem;
+    }
+    
+}
