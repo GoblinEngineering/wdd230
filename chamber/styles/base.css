@@ -1,0 +1,92 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@500&display=swap');
+
+
+:root{
+    --primary-color: #2bb39a ;
+    --secondary-color: #858fff ;
+    --accent1-color: #ff7583;
+    --accent2-color: #000000;
+    --heading-font: "Roboto Slab";
+    --paragraph-font: "Saira Condensed", Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+}
+
+body {
+    background-color: white;
+}
+
+body {
+    width: 80%;
+    margin: auto;
+    font-family: var(--paragraph-font);
+}
+
+header,
+footer {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    padding: 10px;
+    margin: 1rem auto;
+    font-size: large;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: auto;
+}
+
+.card {
+    border: 1px solid var(--accent2-color);
+    background-color: white;
+    margin: 0.5rem auto;
+    min-width: 100%;
+
+}
+.card img {
+    border: 1px solid var(--accent2-color);
+    min-width: 100%;
+    min-height: 20rem;
+}
+
+
+h3 {
+    background-color: var(--secondary-color);
+    padding: 0.5rem;
+    margin: 0;
+    padding: 1rem;
+
+
+}
+
+img {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+nav {
+    background-color: var(--accent1-color);
+    text-align: center;
+}
+nav ul ol{
+    padding: .5rem;
+    font-size: 2rem;
+}
+#hero {
+    border: 1px solid var(--accent2-color);
+    min-width: 100%;
+    min-height: 20rem;
+}    
+.info li{
+    background-color: var(--secondary-color);
+    margin: 1%;
+}
+
+
+
