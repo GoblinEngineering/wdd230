@@ -87,6 +87,17 @@ nav ul ol{
     background-color: var(--secondary-color);
     margin: 1%;
 }
+#cal{
+    border: 0; 
+    min-width: 100%;
+    min-height: 600px;
+}
+.switch{
+    position: absolute;
+    top: 5%;
+    right: 12%;
+    font-size: 200%;
+}
 
 
 
