@@ -9,6 +9,7 @@
     --accent1-color: #ff7583;
     --accent2-color: #000000;
     --heading-font: "Roboto Slab";
+    --background_color: #ffffff;
     --paragraph-font: "Saira Condensed", Helvetica, sans-serif;
 }
 
@@ -17,7 +18,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-    background-color: white;
+    background-color: var(--background_color);
+    color: var(--accent2-color);
 }
 
 body {
@@ -44,7 +46,7 @@ main {
 
 .card {
     border: 1px solid var(--accent2-color);
-    background-color: white;
+    background-color: var(--background_color);
     margin: 0.5rem auto;
     min-width: 100%;
 
@@ -92,12 +94,26 @@ nav ul ol{
     min-width: 100%;
     min-height: 600px;
 }
+
 .switch{
     position: absolute;
     top: 5%;
     right: 12%;
     font-size: 200%;
 }
+
+.switch.hide{
+    color: #000000;
+}
+.switch.hide::before {
+	content: "☀";
+    font-size: 150%;
+    color: white;
+}
+.switch::before {
+	content: "🌙";
+}
+
 
 
 
