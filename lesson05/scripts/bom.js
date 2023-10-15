@@ -4,9 +4,6 @@ const list = document.querySelector("#list");
 
 
 button.addEventListener("click", function button (){
-    const input = document.querySelector("#favchap");
-    const button = document.querySelector("button");
-    const list = document.querySelector("#list");
     if (input.value != ""){
         const li = document.createElement("li");
         const deleteButton = document.createElement("button");
@@ -21,6 +18,7 @@ button.addEventListener("click", function button (){
             input.value = "";
         });
         input.focus()
+        
     }
 });
 
