@@ -83,7 +83,7 @@ nav ul ol{
 #hero {
     border: 1px solid var(--accent2-color);
     min-width: 100%;
-    min-height: 20rem;
+    min-height: auto;
 }    
 .info li{
     background-color: var(--secondary-color);

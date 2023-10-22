@@ -21,7 +21,7 @@
 
 <body>
         <header>
-            <img src="images/hero.png" alt="hero" id="hero">
+            <img src="images/hero (1).webp" alt="hero" id="hero">
             <div class="switch"></div>
             <nav id="nav">
                 <ul>
@@ -35,12 +35,19 @@
 
         <main>
             <section class="card info" >
+                <picture>
+                    <source media="(max-width: 600px)" srcset="images/wdd230-small.webp">
+                    <source media="(max-width: 1000px)" srcset="images/wdd230-Med.webp">
+                    <img src="images/wdd230-Large.webp" alt="The Boys">
+                </picture>
+            </section>
+            <section class="card info" >
                 <h3>upcomming events (potential change into calandar)</h3>
                 <iframe id="cal" src="https://calendar.google.com/calendar/embed?src=9000c7eb84b3be45193e561cdcdee2fa9c9b6b9b69cc8e065f7ed12dcfc128c3%40group.calendar.google.com&ctz=America%2FChicago"></iframe>
             </section>
             <section class="card">
                 <h3>Mana Vault</h3>
-                <img src="images/mana_vault.jpg" alt="hero for mana_vault">
+                <img src="images/mana_vault.webp" alt="hero for mana_vault">
                 <p>desc for store (what products they sell)</p>
                 <a href="https://www.facebook.com/p/The-Mana-Vault-MKE-100087482048156/">Visit Site</a>
                 <li>event : ongoing sales event - </li> 
@@ -49,7 +56,7 @@
             </section>
             <section class="card">
                 <h3>Games Universe</h3>
-                <img src="images/games_universe.jpg" alt="hero for games_universe">
+                <img src="images/games_universe.webp" alt="hero for games_universe">
                 <p>desc for store (what products they sell)</p>
                 <a href="https://www.game-universe.com/">Visit Site</a>
                 <li>event : ongoing sales event - </li> 
@@ -58,7 +65,7 @@
             </section>
             <section class="card">
                 <h3>Warp Storm</h3>
-                <img src="images/warp_storm.jpg" alt="hero for warp_storm">
+                <img src="images/warp_storm.webp" alt="hero for warp_storm">
                 <p>desc for store (what products they sell)</p>
                 <a href="https://www.warpstormmke.com/">Visit Site</a>
                 <li>event : ongoing sales event - </li> 
@@ -67,7 +74,7 @@
             </section>
             <section class="card">
                 <h3>Sly Patch</h3>
-                <img src="images/sly_patch.JPG" alt="hero for sly_patch">
+                <img src="images/sly_patch.webp" alt="hero for sly_patch">
                 <p>desc for store (what products they sell)</p>
                 <a href="https://www.facebook.com/p/Slypatch-Gaming-100068842647253/">Visit Site</a>
                 <li>event : ongoing sales event - </li> 
@@ -76,7 +83,9 @@
             </section>
             <section class="card info" >
                 <h3>weather</h3>
-                <h4>weather info</h4>
+                <p>Temperature: <span id="temp">100</span>&deg;F</p>
+                <p>Humidity: <span id="wind">50</span>%</p>
+                <p>Windchill: <span class="windchill"></span></p>
                 
             </section>
         </main>
@@ -98,6 +107,7 @@
         </footer>
     <script src="../scripts/getdates.js"></script>
     <script src="scripts/dark_theme.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 
 
