@@ -28,4 +28,10 @@
         min-height: 800px;
 
     }
+    .gallery img{
+        transition: transform .3s;
+    }
+    .gallery img:hover {
+        transform: scale(1.05);
+    }
 }
