@@ -5,7 +5,7 @@ const message = document.querySelector("#formmessage");
 
 passowrdConfirmation.addEventListener("focusout", comparePassword);
 
-// This should be refactored.
+
 function comparePassword() {
   console.log(password.value);
   if (password.value !== passowrdConfirmation.value) {
