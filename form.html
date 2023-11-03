@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=`, initial-scale=1.0">
+    <meta name="description" content="WDD 230 - Web Frontend Development assignment portal">
+    <meta name="author" content="Bryce Carter">
+    <title>Bryce Carter - WDD 230 - Web Frontend Development</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    
+    <link rel="icon" href="images/favicon.ico">
+
+    <!--  meta tags for FB and Twitter -->
+    <meta property="og:title" content="Bryce Carter WDD230">
+    <meta property="og:type" content="Website">
+    <meta property="og:image" content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlwLydJF6c3i64Oi7PABnY6sIm-UIxhj63qw&usqp=CAU">
+    <meta property="og:url" content="https://goblinengineering.github.io/wdd230/index.html">
+
+    <!--  Non-Essential, But Recommended -->
+    <meta property="og:description" content="A place to find Bryce Carter's work for the class WDD230">
+    <meta property="og:site_name" content="Bryce Carter WDD230">
+    <meta name="twitter:image:alt" content="A picture of me">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+
+
+
+</head>
+<body>
+    <header>
+        <img src="images/me.webp" alt="picture of me">
+        <h1>
+            Bryce Carter
+        </h1>
+        <button id="mobile_menu_button" ></button>
+    </header>
+<!-- whats up  -->
+    <nav id="nav">
+        <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="chamber/siteplan.html">Site Plan</a></li>
+        <li><a href="chamber/">Chamber</a></li>
+        <li><a target="_blank" href="https://www.byui.edu/">BYU-idaho</a></li>
+        <li><a target="_blank" href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/89?lang=eng">scripture</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <form action="record.html" method="get">
+            <fieldset>
+            <label >Username: <input type="text" name="username" id="username" required=""></label>
+
+            <label >Email: <input type="email" name="email" id="email" pattern=".+@byui\.edu$" title='Please enter a valid email address ending with "byui.edu"' required=""></label>
+
+            <label >Password: <input type="password" name="password" id="password" required="" pattern="[a-zA-Z0-9]{8,}$" title="Password should be at leat 8 or more charactors long"></label>
+
+            <label >Confirm Password: <input type="password" name="passwordConfirmation" id="passwordConfirmation" required=""></label>
+
+            <div id="formmessage"></div>
+            
+            
+        </fieldset>
+            <div>How would you rate us?</div>
+
+            
+            <div class="star-rating">
+
+                <input type="radio" name="stars" id="star-a" value="5"/>
+                <label for="star-a"></label>
+          
+                <input type="radio" name="stars" id="star-b" value="4"/>
+                <label for="star-b"></label>
+            
+                <input type="radio" name="stars" id="star-c" value="3"/>
+                <label for="star-c"></label>
+            
+                <input type="radio" name="stars" id="star-d" value="2"/>
+                <label for="star-d"></label>
+            
+                <input type="radio" name="stars" id="star-e" value="1"/>
+                <label for="star-e"></label>
+          </div>
+          <input class="submitBtn" type="submit" value="Enter My Rating">
+
+        </form>
+    </main>
+
+    <footer>
+        <p>
+            &copy;2023
+        </p>
+        <p>
+            Bryce Carter
+        </p>
+        <p>
+            Wisconsin
+        </p>
+        <p id="lastModified"></p>
+        <p id="NumberVisits"></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/visitCount.js"></script>
+    <script src="scripts/form.js"></script>
+</body>
+</html>
+
+<!-- uneccicary vertical alinement on name  -->
