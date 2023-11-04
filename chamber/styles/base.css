@@ -114,7 +114,28 @@ nav ul ol{
 	content: "🌙";
 }
 
+.mainFormInfo{
+    text-align: left;
+}
 
+.mainFormInfo label {
+    display: block;
 
+    margin: 0 auto;
 
+}
+
+label {
+    padding: 5px;
+}
+
+#classJoinButton {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.centerLeft{
+    text-align: left;
+}
 

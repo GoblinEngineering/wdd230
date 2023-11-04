@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Design Principles Document">
+    <meta name="author" content="Bryce Carter">
+    <title>MKE Chamber of Commerce</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <meta property="og:title" content="Chamber site">
+    <meta property="og:type" content="Website">
+    <meta property="og:image" content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlwLydJF6c3i64Oi7PABnY6sIm-UIxhj63qw&usqp=CAU">
+    <meta property="og:url" content="https://goblinengineering.github.io/wdd230/chamber/index.html">
+</head>
+
+<body>
+        <header>
+            <img src="images/hero (1).webp" alt="hero" id="hero">
+            <div class="switch"></div>
+            <nav id="nav">
+                <ul>
+                <ol><a href="index.html">Home</a></ol>
+                <ol><a href="discover.html">Discover</a></ol>
+                <ol><a href="#">see your ranking</a></ol>
+                <ol><a href="#">Join Us!</a></ol>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="card centerLeft">
+                <h3>Which Membership Is Right For Me?</h3>
+
+                <h4>Non Profit</h4>
+                <li>Cost: 0$</li>
+                <li>New and upcomming offers sent by email</li>
+                <li>First to know about upcomming events</li>
+                <hr>
+            
+                
+                <h4>Bronze</h4>
+                <li>Cost: 20$ monthly</li>
+                <li>Organization displayed on chamber homepage</li>
+                <li>Discounts from other businesses in the chamber</li>
+                <li>Link to attend monthly meetings</li>
+                <hr>
+
+                <h4>Silver</h4>
+                <li>Cost: 40$ monthly</li>
+                <li>All Bronze perks</li>
+                <li>collaboration opportunitys with gold members to be a vendor</li>
+
+
+                
+                <hr>
+
+                <h4>Gold</h4>
+                <li>Cost: 60$ monthly</li>
+                <li>All Silver perks</li>
+                <li>Host official Tournaments for the chamber</li>
+
+            </section>
+
+            <form action="thankyou.html" method="get">
+                <fieldset class="mainFormInfo">
+                    <legend>Info</legend>
+                    <label >First Name: <input type="text" name="Fname" id="Fname" required=""></label>
+
+                    <label >Last Name: <input type="text" name="Lname" id="Fname" required=""></label>
+
+                    <label >Title or Position: <input type="text" name="Position" id="Position" required=""></label>
+
+                    <label >Title or Position: <input type="text" name="Position" id="Position" pattern="[a-zA-Z0-9\-]{7,}$" required=""></label>
+
+                    <label >Email: <input type="email" name="email" id="email" required="" placeholder="YourEmail@gmail.com"></label>
+
+                    <label >Phone Number: <input type="tel" name="telephone" id="telephone" required=""></label>
+
+                    <label >Organization Name: <input type="text" name="organization" id="organization" required=""></label>
+        
+                    <div id="formmessage"></div>
+                
+                
+                </fieldset>
+                <fieldset class="mainFormInfo">
+                    <legend>Membership Level</legend>
+                    <label><input type="radio" name="MembLevel" value="yes" required="">Non Profit Membership</label>
+                    <label><input type="radio" name="MembLevel" value="yes">Bronze Membership</label>
+                    <label><input type="radio" name="MembLevel" value="yes">Silver Membership</label>
+                    <label><input type="radio" name="MembLevel" value="yes">Gold Membership</label>
+                    
+                    
+                </fieldset>
+                <fieldset>
+                    <legend>Organization Description</legend>
+                    <label><textarea name="bizInfo" id="bizInfo" cols="60" rows="5"></textarea></label>
+                    <input type="hidden" name="timestamp" id="timestamp" value="">
+                </fieldset>
+                <button class="btn" id="classJoinButton" type="submit">Join Us</button>
+
+    
+            </form>
+        </main>
+
+        <footer>
+            <p>
+                MKE Chamber of Commerce
+            </p>
+            <p>
+                some fake adress
+            </p>
+            <p>
+                some made up contact info: ______
+            </p>
+            <p>
+                &copy;2023 Bryce Carter
+            </p>
+
+            <p id="lastModified"></p>
+        </footer>
+    <script src="../scripts/getdates.js"></script>
+    <script src="scripts/dark_theme.js"></script>
+</body>
+
+
+</html>
