@@ -20,6 +20,7 @@
     nav a {
         display: block;
         text-align: center;
+        margin: auto;
     }
     .card {
         min-width: 80%;

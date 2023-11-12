@@ -81,9 +81,10 @@ nav {
     background-color: var(--accent1-color);
     text-align: center;
 }
-nav ol{
+nav a{
     padding: .5rem;
     font-size: 2rem;
+    display: block;
     
 }
 #hero {
