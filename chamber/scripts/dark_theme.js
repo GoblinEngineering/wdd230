@@ -12,6 +12,8 @@ function darkMode() {
   root.style.setProperty("background-color", "#222222");
   root.style.setProperty("--background_color", "#222222");
   root.style.setProperty("--accent2-color", "#ffffff");
+  root.style.setProperty("--a-color", "rgb(185, 128, 221)")
+  root.style.setProperty("--accent1-color", "#6a282e");
 }
 
 function lightMode() {
@@ -19,6 +21,8 @@ function lightMode() {
   root.style.setProperty("background-color", "#ffffff");
   root.style.setProperty("--background_color", "#ffffff");
   root.style.setProperty("--accent2-color", "#000000");
+  root.style.setProperty("--a-color", "rgb(66, 30, 89)")
+  root.style.setProperty("--accent1-color", "#ff7583");
 }
 
 

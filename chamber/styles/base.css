@@ -11,6 +11,11 @@
     --heading-font: "Roboto Slab";
     --background_color: #ffffff;
     --paragraph-font: "Saira Condensed", Helvetica, sans-serif;
+    --a-color: rgb(66, 30, 89);
+}
+
+a{
+    color: var(--a-color);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -143,7 +148,8 @@ label {
 
 .grid {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+	grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 	grid-gap: 5px;
 	align-items: center;
 }
@@ -190,7 +196,14 @@ label {
 	font-family: Roboto, Helvetica, sans-serif;
 }
 
+
 .list section:nth-child(even) {
 	background-color: #bed;
+    color: var(--background_color);
 }
+
+.list section:nth-child(even) h3{
+    color: var(--accent2-color);
+}
+
 
