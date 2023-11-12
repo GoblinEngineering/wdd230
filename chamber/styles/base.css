@@ -199,7 +199,7 @@ label {
 
 .list section:nth-child(even) {
 	background-color: #bed;
-    color: var(--background_color);
+    color: #000000;
 }
 
 .list section:nth-child(even) h3{
