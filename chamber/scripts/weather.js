@@ -2,7 +2,7 @@ const currentTemp = document.getElementById("current-temp");
 const weatherIcon = document.getElementById("weather-icon");
 const captionDesc = document.querySelector("figcaption");
 
-const url = "https://api.openweathermap.org/data/2.5/weather?appid=e5674c0b03a2f4565bf24abc425ce910&units=imperial&lat=43.03&lon=-87.89";
+const url = "https://api.openweathermap.org/data/2.5/weather?appid=e5674c0b03a2f4565bf24abc425ce910&units=imperial&lat=49.75&lon=6.64";
 
 async function fetchApi() {
     try {
@@ -28,5 +28,16 @@ async function fetchApi() {
   }
   
 
+function titleCase(str) {
+    
+  return str
+    .toLowerCase()
+    .split(" ")
+    .map(function (word) {
+      return word.replace(word[0], word[0].toUpperCase());
+    })
+    .join(" ");
+    
+}
 
 fetchApi();
