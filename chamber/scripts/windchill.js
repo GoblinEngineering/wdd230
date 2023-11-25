@@ -64,8 +64,6 @@ const displayResults2 = (data) => {
     today = data["list"][0]
     tomarrow = data["list"][8]
     tomarrowX2 = data["list"][16]
-    console.log(tomarrow["dt_txt"])
-    console.log(tomarrowX2["dt_txt"])
     make_card(today)
     make_card(tomarrow)
     make_card(tomarrowX2)
