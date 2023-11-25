@@ -101,6 +101,7 @@ function make_card(info){
     section.appendChild(p3)
 
     fig = document.createElement("figure")
+    fig.setAttribute("class", "W-icon")
     img = document.createElement("img")
     img.setAttribute("src", icon)
     img.setAttribute("alt", desc)

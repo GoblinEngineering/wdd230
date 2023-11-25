@@ -9,6 +9,8 @@ var root = document.querySelector(":root");
 
 function darkMode() {
   root.style.setProperty("--primary-color", "#222222");
+  root.style.setProperty("--secondary-color", "#565CA3");
+  
   root.style.setProperty("background-color", "#222222");
   root.style.setProperty("--background_color", "#222222");
   root.style.setProperty("--accent2-color", "#ffffff");
@@ -18,6 +20,7 @@ function darkMode() {
 
 function lightMode() {
   root.style.setProperty("--primary-color", "#2bb39a");
+  root.style.setProperty("--secondary-color", "#858fff");
   root.style.setProperty("background-color", "#ffffff");
   root.style.setProperty("--background_color", "#ffffff");
   root.style.setProperty("--accent2-color", "#000000");
