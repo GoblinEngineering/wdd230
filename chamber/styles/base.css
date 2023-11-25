@@ -221,5 +221,13 @@ label {
     min-width: 100px;
     min-height: 100px;
 }
-.selected-text {background-color: var(--background_color);}
+.selected-text {
+    background-color: var(--background_color);
+}
+#title{
+    background-color: var(--accent1-color);
+    color: var(--a-color);
+    margin: auto;
+    font-size: 3rem;
+}
 
