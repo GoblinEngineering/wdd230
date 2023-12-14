@@ -1,4 +1,4 @@
-const jsonURL = "https://https://goblinengineering.github.io//wdd230/scoots/data/rental_data.json";
+const jsonURL = "https://goblinengineering.github.io/wdd230/scoots/rental_data.json";
 
 
 async function getPrices() {
