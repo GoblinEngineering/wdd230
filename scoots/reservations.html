@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Bryce Carter">
+    <meta name="description" content="Scoots - Island Transportation and Rental: Home">
+    
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <meta property="og:title" content="Scoots - Island Transportation and Rental: Home">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="#">
+    <meta property="og:url" content="#URL of this page">
+
+    <!-- MAKE A favicon !!!!!!!!!-->
+    <link rel="icon" href="favicon.ico"> 
+
+    
+    <title>Scoots - Island Transportation and Rental</title>
+
+</head>
+<body>
+    <header>
+        <div id="navigation">
+            <img src="images/logo.png" alt="logo" width="auto" height="100px">
+            <h1>Scoots - Island Transportation and Rental</h1>
+            <button id="menu"></button>
+            <nav class="hide">
+                <a href="index.html" >Home</a>
+                <a href="rentals.html">Rentals</a>
+                <a href="reservations.html" id="selected-page">Reservations</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+
+
+
+    </header>
+    <main>
+
+
+        <div>
+            <hr>
+            <h2>Reservation Form</h2>
+            <hr>
+            <form action="thankyou.html" method="get">
+                <fieldset class="disclaimer">
+                    <legend>Disclaimer</legend>
+                    <ul>
+                        <li>$50 security deposit is required to confirm reservations.</li> 
+                        <li>Valid drivers license is required in hand at the time of rental.</li> 
+                        <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+                        <li>Fuel charge is not included.</li>
+                        <li>Unlimited mileage.</li>
+                        <li>Liability insurance is included.</li>
+                        <li>Damage insurance is available for purchase.</li>
+                        <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                        <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
+                        <li>Rentals may be returned to either physical location.</li>
+                    </ul>
+                    <label class="center"><input type="checkbox" name="disclaimer" value="yes"><br>I understand</label>
+                </fieldset>
+
+                <label required="" name="rental-date">Rental Date:</label>
+                <input type="date" id="rental-date" name="rental-date">
+                <br><br>
+
+                <label required="" name="return-date">Return Date:</label>
+                <input type="date" id="return-date" name="return-date">
+                <br><br>
+            
+                <label required="" name="rental-type">Rental Type:</label>
+                <select id="rental-type" name="rental-type">
+                    <option value="">Choose a type</option>
+                    <option value="Honda Metro Scooter">Honda Metro Scooter</option>
+                    <option value="Honda Dio Scooter">Honda Dio Scooter</option>
+                    <option value="Honda Pioneer ATV">Honda Pioneer ATV</option>
+                    <option value="Jeep Wrangler - 4 door with a/c">Jeep Wrangler - 4 door with a/c</option>
+                    <option value="Jeep Wrangler - 2 door">Jeep Wrangler - 2 door</option>
+                </select>
+                <br><br>
+            
+                <label required="" name="number">Number of Rentals:</label>
+                <input type="number" required="" name="number">
+                <br><br>
+            
+                <label class="required" for="phone">Phone Number:</label>
+                <input type="tel" required="" name="phone">
+                <br><br>
+            
+                <label class="required" for="full-name">Full Name:</label>
+                <input type="text" required="" name="full-name">
+                <br><br>
+            
+                <label class="required" for="email">Email:</label>
+                <input type="email" required="" name="email" placeholder="example@gmail.com">
+                <br><br>
+
+                <fieldset id="drop-off">
+                <legend>Drop-off Location</legend>
+                <label><input type="radio" name="drop-off" value="el Centro de Cozumel" required="">el Centro de Cozumel</label>
+                <br>
+                <label><input type="radio" name="drop-off" value="Puerta Maya">Puerta Maya</label>
+                </fieldset>
+            
+                <input type="hidden" id="timestamp" name="timestamp">
+            
+                <input type="submit" value="Submit">
+            </form>
+
+
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <h2 ><a class="colorfix" href="resources.txt">Media Source refrences</a></h2>
+
+
+        <h3>&copy; 2023 Bryce Carter | WDD 230 Final Project</h3>
+
+        <a href="https://facebook.com" target="_blank">
+            <img src="images/facebook-small.webp" alt="Facebook Icon" width="100" height="100"
+                loading="lazy">
+        </a>
+        <a href="https://twitter.com" target="_blank">
+            <img src="images/x-icon-small.webp" alt="X Icon" width="100" height="100"
+                loading="lazy">
+        </a>
+        <a href="https://instagram.com" target="_blank">
+            <img src="images/instagram-small.webp" alt="Instagram Icon" width="130" height="100"
+                loading="lazy">
+        </a>
+    </footer>
+        
+
+
+
+    <script src="scripts/expand.js"></script>
+
+</body>
+</html>

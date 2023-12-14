@@ -13,7 +13,7 @@
 
     <meta property="og:title" content="Scoots - Island Transportation and Rental: Home">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="#">
+    <meta property="og:image" content="image/scooter">
     <meta property="og:url" content="#URL of this page">
 
     <!-- MAKE A favicon !!!!!!!!!-->
@@ -30,10 +30,10 @@
             <h1>Scoots - Island Transportation and Rental</h1>
             <button id="menu"></button>
             <nav class="hide">
-                <a href="index.html">Home</a>
-                <a href="rentals.html" id="selected-page">Rentals</a>
+                <a href="index.html" >Home</a>
+                <a href="rentals.html">Rentals</a>
                 <a href="reservations.html">Reservations</a>
-                <a href="contact.html">Contact</a>
+                <a href="contact.html" id="selected-page">Contact</a>
             </nav>
         </div>
 
@@ -42,6 +42,8 @@
     </header>
     <main>
 
+        
+
         <div id="hero">
             <picture>
                 <img src="images/scooter.jpg" alt="Honda Metro Scooter" width="100%" height="auto"></a>
@@ -49,31 +51,42 @@
             <a href="reservations.html">Reserve Yours Now</a>
         </div>
 
-            <div>
 
 
-
-                <section class="rental-header">
-                    <h1>Scooter's</h1>
-                </section>
-                <section id="scooter-price" class="tableData rental-info">
-                </section>
-
-                <section class="rental-header">
-                    <h1>ATV's</h1>
-                </section>
-                <section id="atv-price" class="tableData rental-info">
-                    <h2></h2>
-                </section>
-
-                <section class="rental-header">
-                    <h1>Jeep's</h1>
-                </section>
-                <section id="jeep-price" class="tableData rental-info">
-                    <h2></h2>
-                </section>
+        <div>
+            <hr>
+            <h2>Our Locations</h2>
+            <hr>
+            <div id="showcase">
                 
-
+                <section>
+                    <h3>Puerta Maya</h3>
+                    <hr>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d29901.817367853735!2d-86.983642!3d20.476396!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1702409675082!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </section>
+                <section>
+                    <h3>el Centro de Cozumel</h3>
+                    <hr>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d59746.88390361186!2d-87.1024603424443!3d20.621508708966108!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1702409734570!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </section>
+                <section>
+                    <h3>Contact Us</h3>
+                    <hr>
+                    <p>Adress: forty-two S roco-roco Road, Winter North, ZX, 99999</p>
+                    <p>Phone: +147-808-9929</p>
+                    <p>Email: ScootsNco@mailformerch.com</p>
+                    <p></p>
+                    <hr>
+                    <form id="contact-form" method="get" action="contact-request.html">
+                        <label>First Name: <input type="text" id="fname" name="fname" required = ""
+                                title="First Name"></label>
+                        <label>Last Name: <input type="text" id="lname" name="lname" required = ""
+                                title="Last Name"></label>
+                        <label>Email: <input type="email" id="email" name="email" required = ""></label>
+                        <label>Comments: <textarea name="description" rows="7"></textarea></label>
+                        <input type="submit" value="Contact Us">
+                    </form>
+                </section>
             </div>
         </div>
 
@@ -102,9 +115,8 @@
         
 
 
-
+    <script src="scripts/weather.js"></script>
     <script src="scripts/expand.js"></script>
-    <script src="scripts/rental.js"></script>
 
 </body>
 </html>
